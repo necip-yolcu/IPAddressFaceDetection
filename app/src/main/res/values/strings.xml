@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">IPaddressFaceDetection</string>
+	<string name="settings">Settings</string>
+	
+	<string name="resolution_label">Resolution</string>
+	<string name="resolution_times"> x </string>
+	<string-array name="resolution_array">
+        <item>640x480</item>
+        <item>480x640</item>
+        <item>320x240</item>
+        <item>240x320</item>
+        <item>176x144</item>
+        <item>144x176</item>
+        <item>Custom</item>
+    </string-array>
+
+	<string name="ip_setting_label">Address</string>
+	<string name="port_setting_label">Port</string>
+	<string name="command_setting_label">Command</string>
+
+	<string name="address_dot">.</string>
+	<string name="command_streaming">\?action=stream</string>
+	<string name="command_videofeed">videofeed</string>
+	
+	<string name="settings_done">Done</string>
+
+	<string name="title_android">Android Camera Face Detection</string>
+	<string name="title_disconnected">IP Camera Disconnected</string>
+	<string name="title_connecting">IP Camera Connecting&#8230;</string>
+	<string name="title_imageerror">Error on preparing images</string>
+    <string name="todo">TODO</string>
+    <string name="button">btn</string>
+
+
+
+	//
+	<string name="hos_geldiniz">HOŞ GELDİNİZ</string>
+	<string name="girebilir">GİREBİLİR</string>
+	<string name="Mevcut">MEVCUT</string>
+	<string name="Kapasite">KAPASİTE</string>
+	<string name="yer">Yer</string>
+	<string name="tarih">Tarih</string>
+	<string name="saat">Saat</string>
+	<string name="on">10</string>
+	<string name="istanbul">İSTANBUL</string>
+	<string name="kamera_sec">Camera</string>
+	<string name="port_radiogroup">Camera</string>
+
+	<string name="r_b_andr">80</string>
+	<string name="r_b_ip">8080</string>
+	<string name="andr_cam">1 (Android Camera)</string>
+	<string name="ip_cam">2 (IP Webcam)</string>
+
+</resources>

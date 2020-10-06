@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    //buildToolsVersion "29.0.1"
+    buildToolsVersion "30.0.1"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.camera.simplemjpeg"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+        //ndk { abiFilters "armeabi-v7a", "x86", "armeabi", "mips" }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets.main.jni.srcDirs = []
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(path: ':sdk')
+    implementation 'com.google.android.gms:play-services-vision:20.1.1'
+
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    //
+    //implementation 'com.github.Pygmalion69:Gauge:1.5.2'   //GAUGE
+
+
+    //permission
+
+}
